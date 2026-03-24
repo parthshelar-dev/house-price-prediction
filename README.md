@@ -1,99 +1,56 @@
 # 🏠 House Price Prediction using Machine Learning
 
-## 📌 Project Overview
-
-This project predicts house prices using multiple machine learning models.
-It includes data preprocessing, feature engineering, model training, evaluation, and prediction.
-
-The goal is to compare different models and select the best one based on performance.
+An end-to-end Machine Learning project that predicts house prices using Linear Regression, Ridge Regression, and Random Forest — with feature engineering, polynomial features, and model comparison.
 
 ---
 
-## 🚀 Models Used
+## 📌 Overview
+
+This project builds a complete ML pipeline to predict house prices based on features like area, bedrooms, bathrooms, floors, and house age.
+
+It includes data preprocessing, feature engineering, model training, evaluation using MSE, and visualization using graphs — structured in a clean and beginner-friendly way.
+
+---
+
+## 🚀 Features
+
+✅ Data loading and exploration
+✅ Feature Engineering:
+
+* YearBuilt → house_age
+
+✅ Correlation Heatmap (EDA)
+✅ Polynomial Features (degree = 2)
+✅ Feature Scaling using StandardScaler
+✅ Model training:
 
 * Linear Regression
-* Ridge Regression (Best Model ✅)
+* Ridge Regression ✅ (Best Model)
 * Random Forest Regression
 
----
-
-## 📊 Features Used
-
-* Area (sqft)
-* Bedrooms
-* Bathrooms
-* Floors
-* House Age (Derived from Year Built)
+✅ Model evaluation using MSE
+✅ Automatic best model selection
+✅ Actual vs Predicted visualization
+✅ Model saving using Joblib
+✅ User input-based prediction system
 
 ---
 
-## ⚙️ Techniques Applied
+## 🧠 Tech Stack
 
-* Feature Engineering (House Age creation)
-* Polynomial Features (degree = 2)
-* Feature Scaling (StandardScaler)
-* One-Hot Encoding (pd.get_dummies)
-* Model Evaluation using MSE (Mean Squared Error)
-* Heatmap for Feature Correlation
-
----
-
-## 📈 Model Performance
-
-| Model             | MSE            |
-| ----------------- | -------------- |
-| Linear Regression | (your value)   |
-| Ridge Regression  | (your value) ✅ |
-| Random Forest     | (your value)   |
-
-👉 Ridge Regression performed best with the lowest MSE.
+| Tool         | Purpose                   |
+| ------------ | ------------------------- |
+| Python       | Core language             |
+| Pandas       | Data manipulation         |
+| NumPy        | Numerical operations      |
+| Scikit-learn | ML models & preprocessing |
+| Matplotlib   | Graph plotting            |
+| Seaborn      | Heatmap visualization     |
+| Joblib       | Model saving/loading      |
 
 ---
 
-## 📊 Visualizations
-
-### 🔹 Correlation Heatmap
-
-(Insert heatmap screenshot here)
-
-### 🔹 Actual vs Predicted Graph
-
-(Insert model comparison graph here)
-
----
-
-## 🧠 Key Insights
-
-* Polynomial features increased model complexity
-* Ridge Regression reduced overfitting using regularization
-* Random Forest did not perform best on this dataset
-* Proper feature engineering improved accuracy
-
----
-
-## ▶️ How to Run the Project
-
-### 1. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 2. Train the model
-
-```bash
-python src/train.py
-```
-
-### 3. Run prediction
-
-```bash
-python src/predict.py
-```
-
----
-
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
 House-Price-Prediction/
@@ -108,24 +65,101 @@ House-Price-Prediction/
 ├── model.pkl
 ├── scaler.pkl
 ├── poly.pkl
-├── README.md
-└── requirements.txt
+│
+├── images/
+│   ├── heatmap.png
+│   └── prediction_graph.png
+│
+├── requirements.txt
+└── README.md
 ```
 
 ---
 
-## 📷 Sample Output
+## ⚙️ How It Works
+
+Raw Data → Feature Engineering → Encoding → Polynomial Features → Scaling → Train → Evaluate → Predict
+
+1. Load dataset
+2. Drop unnecessary column (`Id`)
+3. Create new feature → `house_age`
+4. Apply One-Hot Encoding for categorical data
+5. Apply Polynomial Features (degree = 2)
+6. Scale features using StandardScaler
+7. Train 3 models
+8. Compare using MSE
+9. Select best model automatically
+10. Save model, scaler, and transformer
+
+---
+
+## 📊 Model Performance
+
+| Model             | MSE        |
+| ----------------- | ---------- |
+| Linear Regression | 8.38e+10   |
+| Ridge Regression  | 8.15e+10 ✅ |
+| Random Forest     | 8.65e+10   |
+
+👉 Ridge Regression performed best with lowest MSE.
+
+---
+
+## 📈 Visualizations
+
+### 🔹 Correlation Heatmap
+
+Shows relationship between features.
+
+![Heatmap](images/heatmap.png)
+
+---
+
+### 🔹 Actual vs Predicted
+
+Closer points to diagonal line = better predictions.
+
+![Prediction Graph](images/prediction_graph.png)
+
+---
+
+## ▶️ How to Run
+
+### 1. Install dependencies
 
 ```
-🏠 Enter Your House Details:
-Area: 2000
-Bedrooms: 3
-Bathrooms: 2
-Floors: 1
-Year Built: 2015
-
-🏠 Estimated Price: ₹ 82,45,000
+pip install -r requirements.txt
 ```
+
+### 2. Train model
+
+```
+python src/train.py
+```
+
+### 3. Run prediction
+
+```
+python src/predict.py
+```
+
+---
+
+## 💡 Key Insights
+
+* Polynomial features increased model complexity
+* Ridge Regression reduced overfitting using regularization
+* Linear Regression struggled with higher complexity
+* Random Forest did not outperform Ridge for this dataset
+
+---
+
+## 🔮 Future Improvements
+
+* Hyperparameter tuning for Ridge
+* Try XGBoost / Gradient Boosting
+* Build Streamlit web app
+* Deploy project online
 
 ---
 
@@ -135,9 +169,8 @@ Parth Shelar
 
 ---
 
-## ⭐ Future Improvements
+## ⭐ If you found this useful
+Give it a star ⭐ on GitHub!
 
-* Deploy as a web app (Streamlit)
-* Add more features for better accuracy
-* Hyperparameter tuning
-* Use advanced models (XGBoost, etc.)
+
+
