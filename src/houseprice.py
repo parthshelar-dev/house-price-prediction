@@ -12,7 +12,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 
 # Data load
-df = pd.read_csv(r"D:\ML projects\House Price prediction\data\data.csv")
+df = pd.read_csv("data/data.csv")
 print(df.head())
 print(df.info())
 print(df.describe())
