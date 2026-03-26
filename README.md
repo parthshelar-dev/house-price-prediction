@@ -94,11 +94,11 @@ Raw Data → Feature Engineering → Polynomial Features → Scaling → Train �
 
 | Model | MSE | R² |
 |-------|-----|----|
-| Linear Regression | 8.38e+10 | — |
-| Ridge Regression | 8.15e+10 | — |
-| Random Forest | 8.65e+10 | — |
+| Linear Regression | 1.02e+09 | 0.841 |
+| Ridge Regression | 1.04e+09 | 0.838 |
+| Random Forest | 1.06e+09 | 0.836 |
 
-> Best model is selected automatically based on lowest MSE and saved to `models/model.pkl`.
+Best Model = Linear Regression (lowest MSE)
 
 ---
 
