@@ -54,7 +54,7 @@ House-Price-Prediction/
 │   └── data.csv
 │
 ├── src/
-│   ├── train.py
+│   ├── houseprice.py
 │   └── predict.py
 │
 ├── models/
