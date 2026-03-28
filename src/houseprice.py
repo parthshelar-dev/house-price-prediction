@@ -35,9 +35,6 @@ features = [
 X = df[features]
 y = df["SalePrice"]
 
-# Data cleaning
-X = X.fillna(X.mean())
-
 sns.heatmap(df[features + ["SalePrice"]].corr(), cmap="coolwarm")
 plt.title("Feature Correlation Heatmap")
 plt.show()
@@ -46,6 +43,10 @@ plt.show()
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.3, random_state=100
 )
+
+# Data cleaning
+X_train = X_train.fillna(X_train.mean())
+X_test = X_test.fillna(X_train.mean())
 
 poly = PolynomialFeatures(degree=2)
 X_train_poly = poly.fit_transform(X_train)
