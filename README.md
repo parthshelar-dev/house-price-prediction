@@ -37,7 +37,6 @@ It includes data preprocessing, feature engineering, model training, evaluation 
 |------|---------|
 | Python | Core language |
 | Pandas | Data manipulation |
-| NumPy | Numerical operations |
 | Scikit-learn | ML models & preprocessing |
 | Matplotlib | Graph plotting |
 | Seaborn | Heatmap visualization |
