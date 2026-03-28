@@ -3,6 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import joblib
 from datetime import datetime
+from pathlib import Path
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.preprocessing import StandardScaler
@@ -11,8 +12,10 @@ from sklearn.linear_model import Ridge
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 
+BASE_DIR = Path(__file__).parent.parent
+
 # Data load
-df = pd.read_csv("data/data.csv")
+df = pd.read_csv(BASE_DIR / "data/data.csv")
 print(df.head())
 print(df.info())
 print(df.describe())
@@ -130,9 +133,9 @@ best_model_name = min(mse_scores, key=mse_scores.get)
 best_model = models[best_model_name]
 print(f"Best Model : {best_model_name}")
 
-joblib.dump(best_model, "model.pkl")
-joblib.dump(scaler, "scaler.pkl")
-joblib.dump(poly, "poly.pkl")
-joblib.dump(best_model_name, "best_model_name.pkl")
+joblib.dump(best_model, BASE_DIR / "model.pkl")
+joblib.dump(scaler, BASE_DIR / "scaler.pkl")
+joblib.dump(poly, BASE_DIR / "poly.pkl")
+joblib.dump(best_model_name, BASE_DIR / "best_model_name.pkl")
 
 print("Model saved successfully")
