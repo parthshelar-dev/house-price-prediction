@@ -67,7 +67,7 @@ print("Linear Regression MSE : ", mse_1)
 print("Linear Regression R2 :", r2_1)
 
 # Ridge Regression
-model_2 = Ridge(alpha=20)
+model_2 = Ridge(alpha=0.1)
 model_2.fit(X_train_scale, y_train)
 y_pred_2 = model_2.predict(X_test_scale)
 mse_2 = mean_squared_error(y_test, y_pred_2)
