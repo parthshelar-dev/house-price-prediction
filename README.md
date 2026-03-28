@@ -57,11 +57,10 @@ House-Price-Prediction/
 │   ├── houseprice.py
 │   └── predict.py
 │
-├── models/
-│   ├── model.pkl
-│   ├── scaler.pkl
-│   ├── poly.pkl
-│   └── best_model_name.pkl
+├── model.pkl
+├── scaler.pkl
+├── poly.pkl
+├── best_model_name.pkl
 │
 ├── images/
 │   ├── heatmap.png
