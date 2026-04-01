@@ -118,7 +118,7 @@ Points closer to the diagonal red line = better predictions.
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/House-Price-Prediction.git
+git clone https://github.com/parthshelar-dev/House-Price-Prediction.git
 cd House-Price-Prediction
 ```
 
