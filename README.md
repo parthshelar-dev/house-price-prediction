@@ -45,6 +45,14 @@ It includes data preprocessing, feature engineering, model training, evaluation 
 
 ---
 
+## 📊 Dataset
+- Source: Kaggle  
+- Dataset Name: House Prices - Advanced Regression Techniques  
+- Description: The dataset contains approximately 1460 records with 80 features
+- Link: https://www.kaggle.com/datasets/c/house-prices-advanced-regression-techniques
+
+---
+
 ## 📂 Project Structure
 
 ```
