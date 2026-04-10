@@ -7,13 +7,13 @@ An end-to-end Machine Learning project that predicts house prices using **Linear
 ## 🖥️ Demo
 
 ### 🏠 Home Page
-![Home](assets/home.png)
+![Home](images/home.png)
 
 ### 📊 Buy Prediction
-![Buy](assets/buy.png)
+![Buy](images/buy.png)
 
 ### 💰 Sell Prediction
-![Sell](assets/sell.png)
+![Sell](images/sell.png)
 
 ## 📌 Overview
 
