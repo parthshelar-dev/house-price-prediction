@@ -152,7 +152,7 @@ pip install -r requirements.txt
 
 ### 3. Train the model
 ```bash
-python src/train.py
+python src/houseprice.py
 ```
 
 ### 4. Run prediction
