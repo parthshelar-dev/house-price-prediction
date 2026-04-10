@@ -178,8 +178,7 @@ python src/predict.py
 - [ ] Try XGBoost / Gradient Boosting
 - [ ] Add more features (neighborhood, roof style, etc.)
 - [x] Built Streamlit web app
-- [ ] Deploy online
-- [ ] Deploy online using Render or Hugging Face Spaces
+- [ ] Deploy app online (Streamlit Cloud / Render / Hugging Face Spaces)
 
 ---
 
