@@ -174,10 +174,15 @@ python src/predict.py
 
 ## 🔮 Future Improvements
 
-- [ ] Hyperparameter tuning using GridSearchCV
-- [ ] Try XGBoost / Gradient Boosting
-- [ ] Add more features (neighborhood, roof style, etc.)
-- [x] Built Streamlit web app
+### 🧠 Model Enhancements
+- [ ] Hyperparameter tuning using GridSearchCV  
+- [ ] Try XGBoost / Gradient Boosting  
+
+### 📊 Data Improvements
+- [ ] Add more features (neighborhood, roof style, etc.)  
+
+### 🌐 Deployment
+- [x] Built Streamlit web app  
 - [ ] Deploy app online (Streamlit Cloud / Render / Hugging Face Spaces)
 
 ---
