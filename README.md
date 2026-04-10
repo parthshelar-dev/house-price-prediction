@@ -177,7 +177,8 @@ python src/predict.py
 - [ ] Hyperparameter tuning using GridSearchCV
 - [ ] Try XGBoost / Gradient Boosting
 - [ ] Add more features (neighborhood, roof style, etc.)
-- [ ] Build a Streamlit web app
+- [x] Built Streamlit web app
+- [ ] Deploy online
 - [ ] Deploy online using Render or Hugging Face Spaces
 
 ---
