@@ -40,6 +40,7 @@ It includes data preprocessing, feature engineering, model training, evaluation 
 | Scikit-learn | ML models & preprocessing |
 | Matplotlib | Graph plotting |
 | Seaborn | Heatmap visualization |
+| Streamlit | Web app interface |
 | Joblib | Model saving/loading |
 
 ---
@@ -56,6 +57,7 @@ House-Price-Prediction/
 │   ├── houseprice.py
 │   └── predict.py
 │
+├── app.py
 ├── model.pkl
 ├── scaler.pkl
 ├── poly.pkl
