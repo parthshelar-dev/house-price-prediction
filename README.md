@@ -4,7 +4,20 @@ An end-to-end Machine Learning project that predicts house prices using **Linear
 
 ---
 
+## 🖥️ Demo
+
+### 🏠 Home Page
+![Home](assets/home.png)
+
+### 📊 Buy Prediction
+![Buy](assets/buy.png)
+
+### 💰 Sell Prediction
+![Sell](assets/sell.png)
+
 ## 📌 Overview
+
+---
 
 This project builds a complete ML pipeline to predict house prices based on features like living area, garage capacity, basement area, bathrooms, overall quality, and house age.
 
