@@ -69,7 +69,7 @@ if st.session_state["screen"] == "buy":
         st.caption("Total above-ground living space.")
 
         TotalBsmtSF = st.number_input("Basement Area (sq ft)", min_value=0, value=800)
-        st.caption("Enter 0 if there is no need of basement.")
+        st.caption("Enter 0 for property with no basement.")
 
         YearBuilt = st.number_input("Year Built", min_value=1872, max_value=2024, value=2000)
         st.caption("Originally constructed year.")
@@ -145,7 +145,7 @@ if st.session_state["screen"] == "sell":
         st.caption("Number of cars the garage can fit.")
 
         FullBath = st.slider("Number of Bathrooms", 0, 4, 1)
-        st.caption("NUmber of bathrooms in the house.")
+        st.caption("Number of bathrooms in the house.")
 
     with col2:
         
@@ -153,7 +153,7 @@ if st.session_state["screen"] == "sell":
         st.caption("Total above-ground living space.")
 
         TotalBsmtSF = st.number_input("Basement Area (sq ft)", min_value=0, value=800)
-        st.caption("Enter 0 if there is no need of basement.")
+        st.caption("Enter 0 for property with no basement.")
 
         YearBuilt = st.number_input("Year Built", min_value=1872, max_value=2024, value=2000)
         st.caption("Originally constructed year.")
