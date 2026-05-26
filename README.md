@@ -183,7 +183,7 @@ python src/predict.py
 
 ### 🌐 Deployment
 - [x] Built Streamlit web app  
-- [ ] Deploy app online (Streamlit Cloud / Render / Hugging Face Spaces)
+- [x] Deploy app online (Streamlit Cloud)
 
 ---
 
