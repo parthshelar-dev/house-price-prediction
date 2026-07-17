@@ -2,7 +2,7 @@
 
 An end-to-end Machine Learning project that predicts house prices using **Linear Regression**, **Ridge Regression**, and **Random Forest** — with feature engineering, polynomial features, and automatic model selection.
 
-[![Streamlit App](https://img.shields.io/badge/Streamlit-Live%20App-FF4B4B?logo=streamlit&logoColor=white&style=for-the-badge)](https://parth-housepredictor.streamlit.app/)
+[![House Price Predictor](https://img.shields.io/badge/House%20Price-Predictor-2E86DE?style=for-the-badge)](https://parth-housepredictor.streamlit.app/)
 ---
 
 ## 🖥️ Demo
