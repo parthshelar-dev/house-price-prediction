@@ -1,6 +1,7 @@
 # 🏠 House Price Prediction using Machine Learning
 
 An end-to-end Machine Learning project that predicts house prices using **Linear Regression**, **Ridge Regression**, and **Random Forest** — with feature engineering, polynomial features, and automatic model selection.
+
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://parth-housepredictor.streamlit.app/)
 
 ---
